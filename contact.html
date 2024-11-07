@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rare Perfumes</title>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212; 
+            color: #ffffff; 
+        }
+        .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background-color: #1e1e1e; 
+      border-bottom: 2px solid #ffdd57; 
+    }
+
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #ffdd57; 
+      text-decoration: none;
+    }
+
+    
+    .nav {
+      display: flex;
+      gap: 20px; 
+    }
+
+    .nav a {
+      color: #ffffff; 
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #ffdd57; 
+    }
+        
+        .contact-section {
+            padding: 40px;
+            text-align: center;
+            background-color: #1e1e1e; 
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+        }
+        .container { padding: 20px; text-align: center}
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffdd57; 
+        }
+
+     
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-input {
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 300px; 
+            background-color: #2a2a2a; 
+            color: #ffffff; 
+        }
+
+        .submit-button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            background-color: #ffdd57; 
+            color: #121212;
+            cursor: pointer; 
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #ffd700; 
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Rare Perfumes</a>
+        <nav class="nav">
+          <a href=index.html>Home</a>
+          <a href=Aboutus>About Us</a>
+          <a href=collection.html>Collection</a>
+          <a href=CustomerReviews.html>Customer Reviews</a>
+          <a href=contact.html>Contact us</a>
+        </nav>
+        <button class="cta-button" onclick="shopNow()">Shop Now</button>
+      </header>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p><strong>Company Name:</strong> Perfumio </p>
+        <p><strong>Email:</strong> info@RarePerfumio.com</p>
+        <p><strong>Phone:</strong> +91 8877665413</p>
+        <p><strong>Address:</strong> B13, Fashion Street, Style City, 39913</p>
+        
+        
+ 
+    <section class="contact-section">
+        <h2>Inquiries form</h2>
+        <p>If you have any questions or inquiries, feel free to reach out to us!</p>
+        <form class="contact-form" id="contactForm">
+            <input type="text" class="form-input" placeholder="Your Name" required>
+            <input type="email" class="form-input" placeholder="Your Email" required>
+            <textarea class="form-input" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+       
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const nameInput = this.querySelector('input[type="text"]');
+            const emailInput = this.querySelector('input[type="email"]');
+            const messageInput = this.querySelector('textarea');
+
+            
+            alert(`Thank you, ${nameInput.value}! Your message has been sent.`);
+            nameInput.value = ''; 
+            emailInput.value = '';
+            messageInput.value = ''; 
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+

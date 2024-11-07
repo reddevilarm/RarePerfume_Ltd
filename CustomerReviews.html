@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - Rare Perfumes</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212; 
+            color: #ffffff; 
+        }
+        .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background-color: #1e1e1e; 
+      border-bottom: 2px solid #ffdd57; 
+    }
+
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #ffdd57; 
+      text-decoration: none;
+    }
+
+    
+    .nav {
+      display: flex;
+      gap: 20px; 
+    }
+
+    .nav a {
+      color: #ffffff; 
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #ffdd57; 
+    }
+      
+        .customer-reviews {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .customer-reviews h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffdd57;
+        }
+
+        
+        .review-card {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+            transition: transform 0.3s ease;
+        }
+
+        .review-card:hover {
+            transform: scale(1.05); 
+        }
+
+        
+        .star-rating {
+            color: #ffdd57; 
+            font-size: 1.5rem; 
+            margin: 10px 0; 
+        }
+
+        
+        .review-text {
+            font-size: 1.1rem;
+            color: #d3d3d3; 
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Rare Perfumes</a>
+        <nav class="nav">
+          <a href=index.html>Home</a>
+          <a href=Aboutus>About Us</a>
+          <a href=collection.html>Collection</a>
+          <a href=CustomerReviews.html>Customer Reviews</a>
+          <a href=contact.html>Contact us</a>
+        </nav>
+        <button class="cta-button" onclick="shopNow()">Shop Now</button>
+      </header>
+      
+    
+
+  
+    <section class="customer-reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review-card">
+            <div class="star-rating">★★★★★</div>
+            <p class="review-text">"I absolutely love Rare Perfumes! Each scent is unique and lasts all day long." - Sarah J.</p>
+        </div>
+
+        
+        <div class="review-card">
+            <div class="star-rating">★★★★☆</div>
+            <p class="review-text">"The Vanilla Bliss is my favorite fragrance. It's perfect for any occasion!" - John D.</p>
+        </div>
+
+        
+        <div class="review-card">
+            <div class="star-rating">★★★★★</div>
+            <p class="review-text">"Midnight Oud is an enchanting scent. I get compliments every time I wear it!" - Emily R.</p>
+        </div>
+    </section>
+
+    <script>
+       
+        console.log("Customer Reviews section loaded.");
+    </script>
+
+</body>
+</html>
+

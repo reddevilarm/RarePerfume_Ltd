@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rare Perfumes - Header</title>
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #121212; 
+      color: #ffffff; 
+    }
+
+    id {
+  scroll-behavior: smooth;
+}
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background-color: #1e1e1e; 
+      border-bottom: 2px solid #ffdd57; 
+    }
+
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #ffdd57; 
+      text-decoration: none;
+    }
+
+    
+    .nav {
+      display: flex;
+      gap: 20px; 
+    }
+
+    .nav a {
+      color: #ffffff; 
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #ffdd57; 
+    }
+
+    
+    .cta-button {
+      padding: 10px 20px;
+      background-color: #ffdd57; 
+      color: #121212; 
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #e6c34d; 
+    }
+
+    .cta-button:active {
+      transform: scale(0.95); 
+    }
+
+    
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav a {
+        font-size: 1rem;
+      }
+
+      .cta-button {
+        width: 100%; 
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">Rare Perfumes</a>
+    <nav class="nav">
+      <a href=index.html>Home</a>
+      <a href=#Aboutus>About Us</a>
+      <a href=collection.html>Collection</a>
+      <a href=CustomerReviews.html>Customer Reviews</a>
+      <a href=contact.html>Contact us</a>
+    </nav>
+    <button class="cta-button" onclick="shopNow()">Shop Now</button>
+  </header>
+  
+  <script>
+   
+    function shopNow() {
+      alert("Redirecting to the shop page...");
+      window.location.href = "#collection"; 
+    }
+  </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rare Perfumes - Hero Section</title>
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #121212; 
+      color: #ffffff; 
+    }
+
+    
+    .hero {
+      position: relative;
+      height: 100vh; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW4rjla03vjkgT9ejFtRi-zDHfBAxh8-WfOg&s'); 
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); 
+    }
+
+    .hero-content {
+      position: relative; 
+      z-index: 1; 
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      color: #ffdd57; 
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      max-width: 600px;
+      line-height: 1.5;
+      color: #d3d3d3; 
+    }
+
+    
+    .hero .cta-button {
+      padding: 15px 30px;
+      background-color: #ffdd57; 
+      color: #121212; 
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .hero .cta-button:hover {
+      background-color: #e6c34d; 
+    }
+
+    .hero .cta-button:active {
+      transform: scale(0.95); 
+    }
+
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem; 
+      }
+
+      .hero p {
+        font-size: 1rem; 
+      }
+
+      .hero .cta-button {
+        font-size: 1rem; 
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Indulge in Luxury Fragrances</h1>
+      <p>Experience the captivating essence of Rare Perfumes. Find your signature scent and elevate your presence.</p>
+      <button class="cta-button" onclick="shopNow()">Shop Now</button>
+    </div>
+  </section>
+
+  <script>
+    
+    function shopNow() {
+      
+      alert("Redirecting to the shop page...");
+      window.location.href = "#collection"; 
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <a href=Aboutus></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Rare Perfumes</title>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212; 
+            color: #ffffff;
+            text-align: center;
+        }
+
+         About Us Section /
+        .about-us {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .about-us h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffdd57; 
+        }
+
+        .about-us p {
+            font-size: 1.2rem;
+            margin: 20px auto;
+            max-width: 800px;
+            color: #d3d3d3; /
+        }
+
+        .about-image {
+            width: 60%;
+            height: 300px;
+            max-width: 400px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+            
+        }
+    </style>
+</head>
+<body>
+  <section id="Aboutus">
+   
+   
+  </section>
+
+    <section class="about-us">
+        <h2 >About Rare Perfumes</h2>
+        <p>
+            At Rare Perfumes, we believe that every scent tells a story. With roots deeply embedded in the rich heritage of fragrance-making, we craft our perfumes using only the finest ingredients sourced from around the world. Our passion for perfumery drives us to create unique, luxurious scents that evoke emotions and create unforgettable memories.
+            Smell that everyone will love.
+        </p>
+        <img src="https://img.freepik.com/premium-photo/photograph-selection-perfume-bottles-accompanied-by-visual-representations-key-fragrance_977107-1093.jpg" alt="Artistic Representation of Perfume-Making" class="about-image"> <!-- Replace with your image -->
+    </section>
+
+    <script>
+        
+        console.log("About Us section loaded.");
+    </script>
+
+</body>
+</html>

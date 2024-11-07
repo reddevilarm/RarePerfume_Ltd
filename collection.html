@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rare Perfumes - Featured Products</title>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background-color: #1e1e1e; 
+      border-bottom: 2px solid #ffdd57; 
+    }
+
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #ffdd57; 
+      text-decoration: none;
+    }
+
+    
+    .nav {
+      display: flex;
+      gap: 20px; 
+    }
+
+    .nav a {
+      color: #ffffff; 
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #ffdd57; 
+    }
+       
+        .featured-products {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .featured-products h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffdd57; 
+        }
+
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        
+        .product-card {
+            background-color: #1e1e1e; 
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            padding: 15px;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05); 
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px; 
+            object-fit: cover; 
+            border-radius: 10px;
+        }
+
+        .product-description {
+            margin-top: 15px;
+        }
+
+        .product-description h3 {
+            margin: 10px 0 5px;
+            font-size: 1.5rem;
+            color: #ffdd57; 
+        }
+
+        .product-description p {
+            color: #d3d3d3; 
+        }
+
+    
+        .buy-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ffdd57; 
+            color: #121212; 
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #e6c34d;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Rare Perfumes</a>
+        <nav class="nav">
+          <a href=index.html>Home</a>
+          <a href=Aboutus>About Us</a>
+          <a href=collection.html>Collection</a>
+          <a href=CustomerReviews.html>Customer Reviews</a>
+          <a href=contact.html>Contact us</a>
+        </nav>
+        <button class="cta-button" onclick="shopNow()">Shop Now</button>
+      </header>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+        
+            <div class="product-card">
+                <img src="https://www.houbigant-parfum.com/cdn/shop/products/qqocollectionprivee_600x.png?v=1656078341" alt="Rare Essence" class="product-image"> 
+                <div class="product-description">
+                    <h3>Rare Essence</h3>
+                    <p>A captivating blend of floral and woody notes.</p>
+                    <button class="buy-button" onclick="buyNow('Rare Essence')">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://image1.jdomni.in/product/24022023/C2/24/EA/BC5AA8172BDE60D27758B97E85_1677263331826.webp" alt="Midnight Oud" class="product-image"> <!-- Replace with your image -->
+                <div class="product-description">
+                    <h3>Midnight Oud</h3>
+                    <p>An enchanting fragrance with deep, rich notes.</p>
+                    <button class="buy-button" onclick="buyNow('Midnight Oud')">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/deodorant/p/p/g/body-mist-victoria-s-secret-250-sparkling-citrus-citrus-dream-original-imadxybm8h3u4y5n.jpeg?q=90&crop=false" alt="Citrus Dream" class="product-image">
+                <div class="product-description">
+                    <h3>Citrus Dream</h3>
+                    <p>A fresh and uplifting fragrance for everyday wear.</p>
+                    <button class="buy-button" onclick="buyNow('Citrus Dream')">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images-static.nykaa.com/media/catalog/product/8/c/8c7d7be8904417315523_1.jpg" alt="Vanilla Bliss" class="product-image">
+                <div class="product-description">
+                    <h3>Vanilla Bliss</h3>
+                    <p>A warm and comforting scent for cozy evenings.</p>
+                    <button class="buy-button" onclick="buyNow('Vanilla Bliss')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function buyNow(productName) {
+            alert("You clicked Buy Now for " + productName);
+        }
+    </script>
+
+</body>
+</html>
+
+
